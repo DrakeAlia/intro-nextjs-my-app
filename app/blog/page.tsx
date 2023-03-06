@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllPosts } from "../../lib/cms";
 
+
 export default async function Blog() {
   const posts = await getAllPosts();
 
@@ -14,5 +15,5 @@ export default async function Blog() {
         </Link>
       ))}
     </div>
-  );
+  )
 }
